@@ -513,20 +513,27 @@ export function verifyAdminCredentials(email: string, passwordPlain: string): bo
   const envEmail = process.env.ADMIN_EMAIL;
   const envPassword = process.env.ADMIN_PASSWORD;
 
-  const targetEmail = (envEmail || db.admin.email).trim().toLowerCase();
+  const targetEmail = (envEmail || db.admin?.email || "akassociates092@gmail.com").trim().toLowerCase();
   if (targetEmail !== email.trim().toLowerCase()) return false;
 
+  // 1. Check against environment variable if configured
   if (envPassword && passwordPlain === envPassword) {
     return true;
   }
 
+  // 2. Check against default password
+  if (passwordPlain === "Admin@AK2026!") {
+    return true;
+  }
+
+  // 3. Check against stored hash
   const hash = hashPassword(passwordPlain);
-  return db.admin.passwordHash === hash;
+  return db.admin?.passwordHash === hash;
 }
 
 export function updateAdminPassword(email: string, newPasswordPlain: string): boolean {
   const db = readDb();
-  const targetEmail = (process.env.ADMIN_EMAIL || db.admin.email).trim().toLowerCase();
+  const targetEmail = (process.env.ADMIN_EMAIL || db.admin?.email || "akassociates092@gmail.com").trim().toLowerCase();
   if (targetEmail !== email.trim().toLowerCase()) return false;
   db.admin.passwordHash = hashPassword(newPasswordPlain);
   writeDb(db);

@@ -4,27 +4,32 @@ import { readDb, verifyAdminCredentials } from "@/lib/db";
 
 export async function POST(request: Request) {
   try {
-    const { email, password } = await request.json();
+    const body = await request.json().catch(() => ({}));
+    const cleanEmail = (body.email || "").trim();
+    const cleanPassword = (body.password || "").trim();
 
-    if (!email || !password) {
+    if (!cleanEmail || !cleanPassword) {
       return NextResponse.json({ error: "Email and password are required" }, { status: 400 });
     }
 
     const db = readDb();
-    // Verify password against stored hash or env variables
-    const isValid = verifyAdminCredentials(email, password);
+    // Verify password against stored hash, env variables, or default credentials
+    const isValid = verifyAdminCredentials(cleanEmail, cleanPassword);
 
     if (!isValid) {
       return NextResponse.json({ error: "Invalid email or password" }, { status: 401 });
     }
 
-    const token = createSessionToken({ email: db.admin.email, role: "admin" });
+    const adminEmail = process.env.ADMIN_EMAIL || db.admin?.email || "akassociates092@gmail.com";
+    const adminName = db.admin?.name || "Administrator";
+
+    const token = createSessionToken({ email: adminEmail, role: "admin" });
 
     const response = NextResponse.json({
       success: true,
       user: {
-        email: db.admin.email,
-        name: db.admin.name,
+        email: adminEmail,
+        name: adminName,
         role: "admin",
       },
     });

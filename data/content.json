@@ -1,0 +1,576 @@
+{
+  "hero": {
+    "badge": "PEC Category C3 Registered Firm",
+    "headline": "Civil Engineering &",
+    "highlightText": "General Contracting",
+    "subtitle": "AK ASSOCIATES ENGINEERS & CONTRACTORS provides residential bungalow construction, commercial plazas, and industrial warehouse engineering across Karachi and Pakistan with certified PEC C3 standards.",
+    "primaryCtaText": "REQUEST A QUOTATION",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "VIEW COMPLETED PROJECTS",
+    "secondaryCtaLink": "/projects",
+    "backgroundImage": "/assets/images/ak-headquarters-hero.png"
+  },
+  "about": {
+    "eyebrow": "ABOUT AK ASSOCIATES",
+    "heading": "EXPERIENCED ENGINEERING & CONSTRUCTION CONTRACTORS",
+    "storyP1": "Established in 2013 in Karachi, Pakistan, AK ASSOCIATES ENGINEERS & CONTRACTORS provides civil engineering, general contracting, and turnkey construction services for residential, commercial, and industrial clients.",
+    "storyP2": "Certified under PEC - C3 by the Pakistan Engineering Council and directed by Principal Engineer Rashid Ali, our firm emphasizes structural durability, accurate cost estimation, quality material compliance, and timely milestone handover.",
+    "pecDetails": "Pakistan Engineering Council License: PEC - C3 (Year Established: 2013)",
+    "yearsBadgeNumber": "13+",
+    "yearsBadgeText": "Years of Experience",
+    "primaryImage": "/assets/images/site-upscaled/1.jpeg",
+    "secondaryImage": "/assets/images/site-upscaled/2.jpeg",
+    "mission": "To deliver reliable civil engineering and general contracting services that strictly adhere to Pakistan Engineering Council standards, structural codes, and client specifications.",
+    "vision": "To be a dependable engineering contractor in Pakistan recognized for practical structural execution, quality materials, and transparent client partnerships.",
+    "coreValues": [
+      "Pakistan Engineering Council (PEC) Standards Compliance",
+      "Direct Engineering Oversight on Every Project",
+      "Transparent BOQ & Material Specifications",
+      "On-Schedule Milestone Handover"
+    ]
+  },
+  "company": {
+    "name": "AK ASSOCIATES ENGINEERS & CONTRACTORS",
+    "shortName": "AK Associates",
+    "tagline": "Civil Engineering, Building Construction & General Contracting Services",
+    "heroHeadline": "Civil Engineering & General Contracting",
+    "contactPerson": "Rashid Ali",
+    "role": "Principal Engineer & Managing Director",
+    "phone": "+923213844024",
+    "displayPhone": "0321-3844024",
+    "whatsappUrl": "https://wa.me/923213844024?text=Hello%20AK%20Associates,%20I%20would%20like%20to%20inquire%20about%20a%20construction%20project.",
+    "email": "akassociates092@gmail.com",
+    "address": "R-110 Block A, Gulshan-e-Millat, Korangi, Karachi, Pakistan",
+    "mailingAddress": "R-110 Block A, Near Millat CNG Pump, Gulshan-e-Millat, Korangi, Karachi",
+    "city": "Karachi",
+    "country": "Pakistan",
+    "pecCategory": "PEC - C3",
+    "yearEstablished": 2013,
+    "yearsOfExperience": "13+",
+    "businessHours": "Mon - Sat: 9:00 AM - 6:00 PM",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?q=Gulshan-e-Millat,%20Korangi,%20Karachi&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    "logo": "/assets/images/Ak_logo-removebg-preview.png",
+    "socials": {
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "twitter": "https://twitter.com"
+    }
+  },
+  "services": [
+    {
+      "id": "1",
+      "slug": "new-construction",
+      "title": "New Construction",
+      "shortDescription": "Construction of new residential, commercial and industrial properties from planning through completion.",
+      "fullDescription": "From ground-up structural engineering to full turnkey handover, AK Associates manages every phase of residential bungalows, multi-story commercial buildings, and industrial warehouse construction with precision and strict safety standards.",
+      "iconName": "HardHat",
+      "featured": true,
+      "capabilities": [
+        "Residential Bungalows & Luxury Villas",
+        "Commercial Plazas & Corporate Towers",
+        "Industrial Plants & Warehouses",
+        "Heavy Concrete & Structural Steel Works"
+      ]
+    },
+    {
+      "id": "2",
+      "slug": "design-build",
+      "title": "Design-Build",
+      "shortDescription": "Integrated architectural design and construction services delivered through one coordinated team.",
+      "fullDescription": "Streamline your project with unified architecture, 3D spatial planning, and construction under a single contract. We eliminate miscommunication, control budgets, and accelerate execution timelines.",
+      "iconName": "Compass",
+      "featured": false,
+      "capabilities": [
+        "Architectural 3D Modeling & CAD Drafting",
+        "Structural Engineering Analysis",
+        "BIM Integration & Project Scheduling",
+        "End-to-End Turnkey Delivery"
+      ]
+    },
+    {
+      "id": "3",
+      "slug": "remodel-renovations",
+      "title": "Remodel & Renovations",
+      "shortDescription": "Professional renovation and remodeling solutions for existing residential and commercial spaces.",
+      "fullDescription": "Breathe new life into aging structures. We perform comprehensive structural retrofits, commercial facade modernizations, space reconfigurations, and modern infrastructure overhauls.",
+      "iconName": "Hammer",
+      "featured": false,
+      "capabilities": [
+        "Structural Strengthening & Seismic Retrofits",
+        "Commercial Building Facade Upgrades",
+        "Office Space Reconfiguration",
+        "Modern Mechanical & Plumbing Overhauls"
+      ]
+    },
+    {
+      "id": "4",
+      "slug": "interior-design",
+      "title": "Interior Design",
+      "shortDescription": "Modern interior planning, material selection and finishing solutions.",
+      "fullDescription": "Crafting bespoke interior spaces with architectural finesse. We deliver luxurious false ceiling designs, custom cabinetry, acoustic treatments, executive office suites, and premium flooring.",
+      "iconName": "Layout",
+      "featured": false,
+      "capabilities": [
+        "Corporate Executive Suites & Workspaces",
+        "Luxury Residential Finishing & Millwork",
+        "Modern False Ceiling & Ambient Lighting",
+        "Custom Tile, Marble & Wood Flooring"
+      ]
+    },
+    {
+      "id": "5",
+      "slug": "site-improvements",
+      "title": "Site Improvements",
+      "shortDescription": "Site preparation, exterior improvements, infrastructure and development services.",
+      "fullDescription": "Solid foundations begin with comprehensive site engineering. We handle earthwork excavation, storm water drainage, perimeter security fencing, paving, and external electrical grid setups.",
+      "iconName": "Truck",
+      "featured": false,
+      "capabilities": [
+        "Excavation, Grading & Soil Stabilization",
+        "Underground Drainage & Sewerage Lines",
+        "Roadways, Driveways & Concrete Paving",
+        "Retaining Walls & Boundary Infrastructure"
+      ]
+    },
+    {
+      "id": "6",
+      "slug": "construction-consult",
+      "title": "Construction Consult",
+      "shortDescription": "Professional construction consultation, planning and project guidance.",
+      "fullDescription": "Leverage 13+ years of engineering mastery. Our PEC-registered consultants provide accurate BOQ estimations, structural audits, project feasibility studies, and quality control supervision.",
+      "iconName": "ClipboardCheck",
+      "featured": false,
+      "capabilities": [
+        "BOQ Preparation & Cost Estimation",
+        "PEC Compliance & Structural Audits",
+        "Contractor & Vendor Quality Assurance",
+        "Project Risk Assessment & Management"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "slug": "modern-luxury-villa-dha",
+      "title": "Modern Luxury Residential Villa",
+      "category": "Residential",
+      "location": "DHA Phase 8, Karachi",
+      "area": "1,000 Sq. Yards",
+      "year": "2023 - 2024",
+      "description": "A bespoke modern luxury residence featuring high-grade concrete structural engineering, custom architectural stonework facade, cantilevered balconies, and sustainable thermal insulation.",
+      "featured": true,
+      "image": "/assets/images/site-upscaled/1.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/1.jpeg",
+        "/assets/images/site-upscaled/7.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_5.png"
+      ],
+      "scope": [
+        "Turnkey Architectural & Civil Engineering",
+        "Reinforced Concrete Structure (RCC)",
+        "Premium Exterior Stone Cladding",
+        "Smart Electrical & Automated Plumbing"
+      ]
+    },
+    {
+      "id": "proj-2",
+      "slug": "korangi-industrial-logistics-hub",
+      "title": "Heavy Industrial Logistics Warehouse",
+      "category": "Industrial",
+      "location": "Korangi Industrial Area, Karachi",
+      "area": "45,000 Sq. Ft.",
+      "year": "2022 - 2023",
+      "description": "Engineered pre-engineered steel building (PEB) warehouse facility designed for high-density heavy material storage, with specialized reinforced concrete flooring for heavy machinery loads.",
+      "featured": true,
+      "image": "/assets/images/site-upscaled/4.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/4.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_2.png",
+        "/assets/images/extracted/SITE PICTURES_page_10.png"
+      ],
+      "scope": [
+        "Heavy Industrial Foundation & Laser-Screed Flooring",
+        "PEB Steel Superstructure Fabrication & Erection",
+        "Three-Phase Heavy Electrical Power Distribution",
+        "Industrial Fire Hydrant & Suppression Network"
+      ]
+    },
+    {
+      "id": "proj-3",
+      "slug": "commercial-headquarters-plaza",
+      "title": "Corporate Business Plaza & Headquarters",
+      "category": "Commercial",
+      "location": "Shahrah-e-Faisal, Karachi",
+      "area": "28,000 Sq. Ft.",
+      "year": "2021 - 2022",
+      "description": "Modern commercial multi-story facility with premium exterior elevation, subterranean parking, central HVAC infrastructure, and state-of-the-art office layouts.",
+      "featured": true,
+      "image": "/assets/images/site-upscaled/3.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/3.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_11.png",
+        "/assets/images/extracted/SITE PICTURES_page_12.png"
+      ],
+      "scope": [
+        "Deep Foundation Piling & Sub-structure Works",
+        "Multi-Floor RCC Frame Construction",
+        "Curtain Wall Aluminum & Glass Facade",
+        "High-Speed Elevator & Generator Provisioning"
+      ]
+    },
+    {
+      "id": "proj-4",
+      "slug": "contemporary-residence-clifton",
+      "title": "Contemporary Architectural Bungalow",
+      "category": "Residential",
+      "location": "Clifton Block 4, Karachi",
+      "area": "800 Sq. Yards",
+      "year": "2023",
+      "description": "Contemporary residence with dramatic vertical architectural louvers, double-height curtain wall glazing, custom timber entry elements, and courtyard integration.",
+      "featured": false,
+      "image": "/assets/images/site-upscaled/2.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/2.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_7.png",
+        "/assets/images/extracted/SITE PICTURES_page_8.png"
+      ],
+      "scope": [
+        "Custom Architectural Design & Structural Detailing",
+        "Structural Steel & Glazing Integration",
+        "Complete MEP (Mechanical, Electrical, Plumbing)",
+        "High-End Interior Woodwork & Finishes"
+      ]
+    },
+    {
+      "id": "proj-5",
+      "slug": "executive-office-interior-fitout",
+      "title": "Executive Corporate Office & Suites",
+      "category": "Interior",
+      "location": "Clifton Block 2, Karachi",
+      "area": "12,500 Sq. Ft.",
+      "year": "2023",
+      "description": "Turnkey interior execution for corporate headquarters, featuring bespoke executive boardrooms, acoustic glass partitions, suspended lighting arrays, and reception lounges.",
+      "featured": false,
+      "image": "/assets/images/extracted/SITE PICTURES_page_3.png",
+      "gallery": [
+        "/assets/images/extracted/SITE PICTURES_page_3.png",
+        "/assets/images/extracted/SITE PICTURES_page_1.png",
+        "/assets/images/extracted/SITE PICTURES_page_13.png"
+      ],
+      "scope": [
+        "Architectural Space Planning & Ergonomics",
+        "Frameless Glass Partitions & Acoustic Walls",
+        "Concealed LED Architectural Lighting",
+        "Custom Italian Marble & Parquet Flooring"
+      ]
+    },
+    {
+      "id": "proj-6",
+      "slug": "modern-residence-bahria",
+      "title": "Modern Minimalist Villa",
+      "category": "Residential",
+      "location": "Bahria Town, Karachi",
+      "area": "500 Sq. Yards",
+      "year": "2022",
+      "description": "Clean geometric villa with seamless open-plan living, floating cantilever stairs, weather-resistant textured coatings, and integrated rooftop terrace pergola.",
+      "featured": false,
+      "image": "/assets/images/site-upscaled/5.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/5.jpeg",
+        "/assets/images/site-upscaled/10.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_14.png"
+      ],
+      "scope": [
+        "Architectural 3D Concept & Civil Execution",
+        "Custom RCC Slab Framing",
+        "Anti-Termite & Deep Waterproofing Systems",
+        "Designer Landscaping & Perimeter Security"
+      ]
+    },
+    {
+      "id": "proj-7",
+      "slug": "site-area-industrial-plant",
+      "title": "Industrial Manufacturing Plant",
+      "category": "Industrial",
+      "location": "SITE Area, Karachi",
+      "area": "35,000 Sq. Ft.",
+      "year": "2020 - 2021",
+      "description": "Heavy manufacturing facility engineered with high load-bearing foundations, overhead crane girder provisions, industrial ventilation systems, and specialized plumbing grids.",
+      "featured": false,
+      "image": "/assets/images/site-upscaled/8.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/8.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_4.png",
+        "/assets/images/extracted/SITE PICTURES_page_15.png"
+      ],
+      "scope": [
+        "Reinforced Machine Base Foundations",
+        "Heavy Steel Truss & Cladding Erection",
+        "Effluent Drainage & Industrial Waste Lines",
+        "High-Bay Industrial LED Lighting Grid"
+      ]
+    },
+    {
+      "id": "proj-8",
+      "slug": "urban-apartment-complex",
+      "title": "Multi-Unit Urban Residential Complex",
+      "category": "Residential",
+      "location": "Gulshan-e-Iqbal, Karachi",
+      "area": "32,000 Sq. Ft.",
+      "year": "2021",
+      "description": "Multi-story residential apartment building engineered with high-grade earthquake-resistant structural standards, premium exterior elevation, and dedicated utility shafts.",
+      "featured": false,
+      "image": "/assets/images/site-upscaled/6.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/6.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_6.png",
+        "/assets/images/extracted/SITE PICTURES_page_16.png"
+      ],
+      "scope": [
+        "Seismic Grade Structural Design & Execution",
+        "Centralized Underground Water Tank & Pumping",
+        "Individual Sub-Meters & Heavy Line Wiring",
+        "Weatherproof Exterior Texture Coating"
+      ]
+    },
+    {
+      "id": "proj-9",
+      "slug": "commercial-tower-pechs",
+      "title": "Commercial Retail Center & Showroom",
+      "category": "Commercial",
+      "location": "PECHS Block 6, Karachi",
+      "area": "22,000 Sq. Ft.",
+      "year": "2022",
+      "description": "Multi-level commercial showroom and retail plaza with expansive floor spans, automated glass storefronts, and integrated basement cargo lifts.",
+      "featured": false,
+      "image": "/assets/images/site-upscaled/9.jpeg",
+      "gallery": [
+        "/assets/images/site-upscaled/9.jpeg",
+        "/assets/images/extracted/SITE PICTURES_page_17.png",
+        "/assets/images/extracted/SITE PICTURES_page_18.png"
+      ],
+      "scope": [
+        "Commercial Superstructure & Slab Casting",
+        "High-Grade Aluminum Curtain Wall Installation",
+        "Complete Fire Suppression & Alarm Network",
+        "Commercial Grade Power Sub-Station Setup"
+      ]
+    },
+    {
+      "id": "proj-10",
+      "slug": "luxury-countryside-farmhouse",
+      "title": "Contemporary Countryside Farmhouse",
+      "category": "Residential",
+      "location": "Malir Cantt Countryside, Karachi",
+      "area": "2,000 Sq. Yards",
+      "year": "2023",
+      "description": "Sprawling luxury farmhouse featuring stone masonry walls, open pavilion architecture, infinity pool filtration systems, and bespoke landscape gardening.",
+      "featured": false,
+      "image": "/assets/images/extracted/SITE PICTURES_page_9.png",
+      "gallery": [
+        "/assets/images/extracted/SITE PICTURES_page_9.png",
+        "/assets/images/extracted/SITE PICTURES_page_19.png",
+        "/assets/images/extracted/SITE PICTURES_page_20.png"
+      ],
+      "scope": [
+        "Rustic Stone & RCC Hybrid Construction",
+        "Custom Hydraulic Swimming Pool Engineering",
+        "Solar Off-Grid Power & Deep Borehole Water",
+        "Architectural Landscape & Ambient Night Lighting"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Tariq Mahmood",
+      "role": "Commercial Director",
+      "company": "Apex Logistics & Warehousing",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "rating": 5,
+      "content": "AK Associates delivered our 45,000 sq.ft. Korangi warehouse ahead of schedule. Their structural steel fabrication and laser-screed flooring met the highest industrial standards. Rashid Ali and his team are consummate engineering professionals."
+    },
+    {
+      "id": "test-2",
+      "name": "Dr. Shahzad Ansari",
+      "role": "Homeowner & Client",
+      "company": "DHA Phase 8 Project",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "rating": 5,
+      "content": "Building our dream bungalow with AK Associates was a seamless journey. Their attention to structural integrity, exquisite stonework finishing, and transparent cost breakdown made them a true partner from groundbreaking to handover."
+    },
+    {
+      "id": "test-3",
+      "name": "Imran Siddiqui",
+      "role": "Managing Partner",
+      "company": "Al-Baraka Enterprises",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80",
+      "rating": 5,
+      "content": "The electrical and civil refurbishment executed by AK Associates transformed our industrial facility in SITE Area. Their PEC C3 engineering credentials gave us absolute peace of mind regarding safety compliance and load durability."
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "slug": "how-to-hire-a-general-contractor-pakistan",
+      "title": "How to Hire a Registered PEC Contractor for Commercial Projects",
+      "excerpt": "Key considerations for vetting engineering qualifications, PEC categories, contract structures, and structural safety standards in Pakistan.",
+      "date": {
+        "day": "14",
+        "month": "AUG",
+        "year": "2026"
+      },
+      "category": "Contracting Advice",
+      "image": "/assets/images/site-upscaled/3.jpeg",
+      "commentsCount": 4,
+      "readTime": "5 min read"
+    },
+    {
+      "id": "news-2",
+      "slug": "modern-structural-engineering-trends-karachi",
+      "title": "Modern Structural Engineering Trends in Coastal Urban Construction",
+      "excerpt": "Exploring corrosion-resistant reinforcement, waterproof foundation engineering, and high-efficiency MEP design for Karachi buildings.",
+      "date": {
+        "day": "28",
+        "month": "JUL",
+        "year": "2026"
+      },
+      "category": "Civil Engineering",
+      "image": "/assets/images/site-upscaled/4.jpeg",
+      "commentsCount": 7,
+      "readTime": "7 min read"
+    },
+    {
+      "id": "news-3",
+      "slug": "luxury-residential-turnkey-architecture",
+      "title": "Luxury Residential Architecture: From 3D Concept to Concrete Handover",
+      "excerpt": "How an integrated design-build methodology eliminates friction between architects and civil teams during high-end villa construction.",
+      "date": {
+        "day": "12",
+        "month": "JUN",
+        "year": "2026"
+      },
+      "category": "Architecture",
+      "image": "/assets/images/site-upscaled/1.jpeg",
+      "commentsCount": 2,
+      "readTime": "4 min read"
+    }
+  ],
+  "media": [
+    {
+      "id": "media-1",
+      "filename": "ak-headquarters-hero.png",
+      "url": "/assets/images/ak-headquarters-hero.png",
+      "size": 1540000,
+      "mime": "image/png",
+      "uploadedAt": "2026-08-16T13:54:33.102Z"
+    },
+    {
+      "id": "media-2",
+      "filename": "1.jpeg",
+      "url": "/assets/images/site-upscaled/1.jpeg",
+      "size": 898000,
+      "mime": "image/jpeg",
+      "uploadedAt": "2026-08-16T13:54:33.103Z"
+    },
+    {
+      "id": "media-3",
+      "filename": "2.jpeg",
+      "url": "/assets/images/site-upscaled/2.jpeg",
+      "size": 753000,
+      "mime": "image/jpeg",
+      "uploadedAt": "2026-08-16T13:54:33.103Z"
+    },
+    {
+      "id": "media-4",
+      "filename": "3.jpeg",
+      "url": "/assets/images/site-upscaled/3.jpeg",
+      "size": 616000,
+      "mime": "image/jpeg",
+      "uploadedAt": "2026-08-16T13:54:33.103Z"
+    },
+    {
+      "id": "media-5",
+      "filename": "4.jpeg",
+      "url": "/assets/images/site-upscaled/4.jpeg",
+      "size": 605000,
+      "mime": "image/jpeg",
+      "uploadedAt": "2026-08-16T13:54:33.103Z"
+    }
+  ],
+  "messages": [
+    {
+      "firstName": "Test Client",
+      "lastName": "Karachi",
+      "email": "client@example.com",
+      "phone": "03001234567",
+      "service": "New Construction",
+      "message": "Need quote for 1000 sq yd bungalow.",
+      "id": "msg-1786988994069",
+      "status": "unread",
+      "createdAt": "2026-08-17T17:49:54.069Z"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test@example.com",
+      "phone": "03001234567",
+      "service": "Turnkey Construction",
+      "message": "Testing contact submission",
+      "id": "msg-1786897584008",
+      "status": "unread",
+      "createdAt": "2026-08-16T16:26:24.008Z"
+    },
+    {
+      "firstName": "Tariq",
+      "lastName": "Mahmood",
+      "email": "tariq.mahmood@korangi-ind.pk",
+      "phone": "0300-1122334",
+      "service": "Design-Build",
+      "message": "Need complete turnkey industrial fabrication quotation for 40,000 sq.ft facility.",
+      "id": "msg-1786891351964",
+      "status": "unread",
+      "createdAt": "2026-08-16T14:42:31.964Z"
+    },
+    {
+      "firstName": "Asad",
+      "lastName": "Vohra",
+      "email": "asad.vohra@gmail.com",
+      "phone": "0321-9988776",
+      "service": "New Construction",
+      "message": "Requesting BOQ for 2,000 sq. yard commercial plaza.",
+      "id": "msg-1786891061226",
+      "status": "unread",
+      "createdAt": "2026-08-16T14:37:41.226Z"
+    },
+    {
+      "id": "msg-1",
+      "firstName": "Hassan",
+      "lastName": "Raza",
+      "email": "hassan.raza@gmail.com",
+      "phone": "0300-8234190",
+      "service": "New Construction",
+      "message": "We own a 1,000 sq. yard plot in DHA Phase 8 and want to build a contemporary 2-story bungalow. Looking for turnkey civil construction and MEP quotation.",
+      "status": "unread",
+      "createdAt": "2026-08-16T10:30:00Z"
+    },
+    {
+      "id": "msg-2",
+      "firstName": "Kamran",
+      "lastName": "Siddiqui",
+      "email": "ksiddiqui@textilepk.com",
+      "phone": "0322-9988112",
+      "service": "Design-Build",
+      "message": "Inquiry regarding a 30,000 sq.ft. PEB industrial warehouse structure in Korangi Industrial Area. Require preliminary BOQ and timeline estimation.",
+      "status": "read",
+      "createdAt": "2026-08-15T14:15:00Z"
+    }
+  ],
+  "admin": {
+    "email": "akassociates092@gmail.com",
+    "passwordHash": "aadf7cf6f845bcbbd9ca4ae3d1b52a4a9ddf8801f137cb5bb7780f2ab289787e",
+    "name": "Rashid Ali",
+    "role": "admin"
+  }
+}

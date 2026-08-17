@@ -1,0 +1,248 @@
+export interface ProjectItem {
+  id: string;
+  slug: string;
+  title: string;
+  category: "Residential" | "Commercial" | "Industrial" | "Interior";
+  location: string;
+  client?: string;
+  area?: string;
+  year?: string;
+  description: string;
+  featured: boolean;
+  image: string;
+  gallery?: string[];
+  scope: string[];
+}
+
+export const projectsData: ProjectItem[] = [
+  {
+    id: "proj-1",
+    slug: "modern-luxury-villa-dha",
+    title: "Modern Luxury Residential Villa",
+    category: "Residential",
+    location: "DHA Phase 8, Karachi",
+    area: "1,000 Sq. Yards",
+    year: "2023 - 2024",
+    description: "A bespoke modern luxury residence featuring high-grade concrete structural engineering, custom architectural stonework facade, cantilevered balconies, and sustainable thermal insulation.",
+    featured: true,
+    image: "/assets/images/site-upscaled/1.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/1.jpeg",
+      "/assets/images/site-upscaled/7.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_5.png",
+    ],
+    scope: [
+      "Turnkey Architectural & Civil Engineering",
+      "Reinforced Concrete Structure (RCC)",
+      "Premium Exterior Stone Cladding",
+      "Smart Electrical & Automated Plumbing",
+    ],
+  },
+  {
+    id: "proj-2",
+    slug: "korangi-industrial-logistics-hub",
+    title: "Heavy Industrial Logistics Warehouse",
+    category: "Industrial",
+    location: "Korangi Industrial Area, Karachi",
+    area: "45,000 Sq. Ft.",
+    year: "2022 - 2023",
+    description: "Engineered pre-engineered steel building (PEB) warehouse facility designed for high-density heavy material storage, with specialized reinforced concrete flooring for heavy machinery loads.",
+    featured: true,
+    image: "/assets/images/site-upscaled/4.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/4.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_2.png",
+      "/assets/images/extracted/SITE PICTURES_page_10.png",
+    ],
+    scope: [
+      "Heavy Industrial Foundation & Laser-Screed Flooring",
+      "PEB Steel Superstructure Fabrication & Erection",
+      "Three-Phase Heavy Electrical Power Distribution",
+      "Industrial Fire Hydrant & Suppression Network",
+    ],
+  },
+  {
+    id: "proj-3",
+    slug: "commercial-headquarters-plaza",
+    title: "Corporate Business Plaza & Headquarters",
+    category: "Commercial",
+    location: "Shahrah-e-Faisal, Karachi",
+    area: "28,000 Sq. Ft.",
+    year: "2021 - 2022",
+    description: "Modern commercial multi-story facility with premium exterior elevation, subterranean parking, central HVAC infrastructure, and state-of-the-art office layouts.",
+    featured: true,
+    image: "/assets/images/site-upscaled/3.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/3.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_11.png",
+      "/assets/images/extracted/SITE PICTURES_page_12.png",
+    ],
+    scope: [
+      "Deep Foundation Piling & Sub-structure Works",
+      "Multi-Floor RCC Frame Construction",
+      "Curtain Wall Aluminum & Glass Facade",
+      "High-Speed Elevator & Generator Provisioning",
+    ],
+  },
+  {
+    id: "proj-4",
+    slug: "contemporary-residence-clifton",
+    title: "Contemporary Architectural Bungalow",
+    category: "Residential",
+    location: "Clifton Block 4, Karachi",
+    area: "800 Sq. Yards",
+    year: "2023",
+    description: "Contemporary residence with dramatic vertical architectural louvers, double-height curtain wall glazing, custom timber entry elements, and courtyard integration.",
+    featured: false,
+    image: "/assets/images/site-upscaled/2.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/2.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_7.png",
+      "/assets/images/extracted/SITE PICTURES_page_8.png",
+    ],
+    scope: [
+      "Custom Architectural Design & Structural Detailing",
+      "Structural Steel & Glazing Integration",
+      "Complete MEP (Mechanical, Electrical, Plumbing)",
+      "High-End Interior Woodwork & Finishes",
+    ],
+  },
+  {
+    id: "proj-5",
+    slug: "executive-office-interior-fitout",
+    title: "Executive Corporate Office & Suites",
+    category: "Interior",
+    location: "Clifton Block 2, Karachi",
+    area: "12,500 Sq. Ft.",
+    year: "2023",
+    description: "Turnkey interior execution for corporate headquarters, featuring bespoke executive boardrooms, acoustic glass partitions, suspended lighting arrays, and reception lounges.",
+    featured: false,
+    image: "/assets/images/extracted/SITE PICTURES_page_3.png",
+    gallery: [
+      "/assets/images/extracted/SITE PICTURES_page_3.png",
+      "/assets/images/extracted/SITE PICTURES_page_1.png",
+      "/assets/images/extracted/SITE PICTURES_page_13.png",
+    ],
+    scope: [
+      "Architectural Space Planning & Ergonomics",
+      "Frameless Glass Partitions & Acoustic Walls",
+      "Concealed LED Architectural Lighting",
+      "Custom Italian Marble & Parquet Flooring",
+    ],
+  },
+  {
+    id: "proj-6",
+    slug: "modern-residence-bahria",
+    title: "Modern Minimalist Villa",
+    category: "Residential",
+    location: "Bahria Town, Karachi",
+    area: "500 Sq. Yards",
+    year: "2022",
+    description: "Clean geometric villa with seamless open-plan living, floating cantilever stairs, weather-resistant textured coatings, and integrated rooftop terrace pergola.",
+    featured: false,
+    image: "/assets/images/site-upscaled/5.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/5.jpeg",
+      "/assets/images/site-upscaled/10.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_14.png",
+    ],
+    scope: [
+      "Architectural 3D Concept & Civil Execution",
+      "Custom RCC Slab Framing",
+      "Anti-Termite & Deep Waterproofing Systems",
+      "Designer Landscaping & Perimeter Security",
+    ],
+  },
+  {
+    id: "proj-7",
+    slug: "site-area-industrial-plant",
+    title: "Industrial Manufacturing Plant",
+    category: "Industrial",
+    location: "SITE Area, Karachi",
+    area: "35,000 Sq. Ft.",
+    year: "2020 - 2021",
+    description: "Heavy manufacturing facility engineered with high load-bearing foundations, overhead crane girder provisions, industrial ventilation systems, and specialized plumbing grids.",
+    featured: false,
+    image: "/assets/images/site-upscaled/8.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/8.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_4.png",
+      "/assets/images/extracted/SITE PICTURES_page_15.png",
+    ],
+    scope: [
+      "Reinforced Machine Base Foundations",
+      "Heavy Steel Truss & Cladding Erection",
+      "Effluent Drainage & Industrial Waste Lines",
+      "High-Bay Industrial LED Lighting Grid",
+    ],
+  },
+  {
+    id: "proj-8",
+    slug: "urban-apartment-complex",
+    title: "Multi-Unit Urban Residential Complex",
+    category: "Residential",
+    location: "Gulshan-e-Iqbal, Karachi",
+    area: "32,000 Sq. Ft.",
+    year: "2021",
+    description: "Multi-story residential apartment building engineered with high-grade earthquake-resistant structural standards, premium exterior elevation, and dedicated utility shafts.",
+    featured: false,
+    image: "/assets/images/site-upscaled/6.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/6.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_6.png",
+      "/assets/images/extracted/SITE PICTURES_page_16.png",
+    ],
+    scope: [
+      "Seismic Grade Structural Design & Execution",
+      "Centralized Underground Water Tank & Pumping",
+      "Individual Sub-Meters & Heavy Line Wiring",
+      "Weatherproof Exterior Texture Coating",
+    ],
+  },
+  {
+    id: "proj-9",
+    slug: "commercial-tower-pechs",
+    title: "Commercial Retail Center & Showroom",
+    category: "Commercial",
+    location: "PECHS Block 6, Karachi",
+    area: "22,000 Sq. Ft.",
+    year: "2022",
+    description: "Multi-level commercial showroom and retail plaza with expansive floor spans, automated glass storefronts, and integrated basement cargo lifts.",
+    featured: false,
+    image: "/assets/images/site-upscaled/9.jpeg",
+    gallery: [
+      "/assets/images/site-upscaled/9.jpeg",
+      "/assets/images/extracted/SITE PICTURES_page_17.png",
+      "/assets/images/extracted/SITE PICTURES_page_18.png",
+    ],
+    scope: [
+      "Commercial Superstructure & Slab Casting",
+      "High-Grade Aluminum Curtain Wall Installation",
+      "Complete Fire Suppression & Alarm Network",
+      "Commercial Grade Power Sub-Station Setup",
+    ],
+  },
+  {
+    id: "proj-10",
+    slug: "luxury-countryside-farmhouse",
+    title: "Contemporary Countryside Farmhouse",
+    category: "Residential",
+    location: "Malir Cantt Countryside, Karachi",
+    area: "2,000 Sq. Yards",
+    year: "2023",
+    description: "Sprawling luxury farmhouse featuring stone masonry walls, open pavilion architecture, infinity pool filtration systems, and bespoke landscape gardening.",
+    featured: false,
+    image: "/assets/images/extracted/SITE PICTURES_page_9.png",
+    gallery: [
+      "/assets/images/extracted/SITE PICTURES_page_9.png",
+      "/assets/images/extracted/SITE PICTURES_page_19.png",
+      "/assets/images/extracted/SITE PICTURES_page_20.png",
+    ],
+    scope: [
+      "Rustic Stone & RCC Hybrid Construction",
+      "Custom Hydraulic Swimming Pool Engineering",
+      "Solar Off-Grid Power & Deep Borehole Water",
+      "Architectural Landscape & Ambient Night Lighting",
+    ],
+  },
+];

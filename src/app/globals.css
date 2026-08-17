@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-primary: #00a3e0;
+    --brand-dark: #0284c7;
+    --brand-navy: #17222c;
+    --brand-charcoal: #25292d;
+    --brand-gray-light: #f4f5f6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: #1e293b;
+    background-color: #ffffff;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-oswald), sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Geometric isometric cube pattern for light sections (Services, Testimonials) */
+.bg-cube-pattern {
+  background-color: #f4f5f6;
+  background-image: 
+    radial-gradient(rgba(0, 163, 224, 0.06) 1px, transparent 1px),
+    radial-gradient(rgba(23, 34, 44, 0.04) 1px, #f4f5f6 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Dark blueprint geometric grid for dark sections (Projects, Enquiry, Footer) */
+.bg-blueprint-grid {
+  background-color: #17222c;
+  background-image: 
+    linear-gradient(rgba(0, 163, 224, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 163, 224, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Clean custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #17222c;
+}
+::-webkit-scrollbar-thumb {
+  background: #0284c7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00a3e0;
+}

@@ -11,10 +11,8 @@ export async function POST(request: Request) {
     }
 
     const db = readDb();
-    // Verify password against stored hash or default password
-    const isValid = verifyAdminCredentials(email, password) || (
-      email.toLowerCase() === db.admin.email.toLowerCase() && password === "Admin@AK2026!"
-    );
+    // Verify password against stored hash or env variables
+    const isValid = verifyAdminCredentials(email, password);
 
     if (!isValid) {
       return NextResponse.json({ error: "Invalid email or password" }, { status: 401 });

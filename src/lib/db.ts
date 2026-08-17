@@ -182,8 +182,8 @@ function getDefaultData(): DatabaseSchema {
       },
     ],
     admin: {
-      email: "akassociates092@gmail.com",
-      passwordHash: hashPassword("Admin@AK2026!"),
+      email: process.env.ADMIN_EMAIL || "akassociates092@gmail.com",
+      passwordHash: hashPassword(process.env.ADMIN_PASSWORD || "Admin@AK2026!"),
       name: "Rashid Ali",
       role: "admin",
     },
@@ -510,14 +510,24 @@ export function deleteMessage(id: string) {
 // ADMIN AUTH
 export function verifyAdminCredentials(email: string, passwordPlain: string): boolean {
   const db = readDb();
-  if (db.admin.email.toLowerCase() !== email.trim().toLowerCase()) return false;
+  const envEmail = process.env.ADMIN_EMAIL;
+  const envPassword = process.env.ADMIN_PASSWORD;
+
+  const targetEmail = (envEmail || db.admin.email).trim().toLowerCase();
+  if (targetEmail !== email.trim().toLowerCase()) return false;
+
+  if (envPassword && passwordPlain === envPassword) {
+    return true;
+  }
+
   const hash = hashPassword(passwordPlain);
   return db.admin.passwordHash === hash;
 }
 
 export function updateAdminPassword(email: string, newPasswordPlain: string): boolean {
   const db = readDb();
-  if (db.admin.email.toLowerCase() !== email.trim().toLowerCase()) return false;
+  const targetEmail = (process.env.ADMIN_EMAIL || db.admin.email).trim().toLowerCase();
+  if (targetEmail !== email.trim().toLowerCase()) return false;
   db.admin.passwordHash = hashPassword(newPasswordPlain);
   writeDb(db);
   return true;

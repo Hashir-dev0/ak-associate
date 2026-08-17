@@ -3,7 +3,7 @@
 import React, { useState, Suspense } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Lock, Mail, ShieldCheck, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
+import { Lock, Mail, ShieldCheck, ArrowRight, AlertCircle, Loader2, Eye, EyeOff } from "lucide-react";
 import { companyData } from "@/data/company";
 
 function LoginForm() {
@@ -11,13 +11,19 @@ function LoginForm() {
   const searchParams = useSearchParams();
   const redirectUrl = searchParams.get("redirect") || "/admin";
 
-  const [email, setEmail] = useState("akassociates092@gmail.com");
-  const [password, setPassword] = useState("Admin@AK2026!");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email.trim() || !password.trim()) {
+      setError("Please enter both email and password");
+      return;
+    }
+
     setLoading(true);
     setError("");
 
@@ -25,7 +31,7 @@ function LoginForm() {
       const res = await fetch("/api/admin/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email: email.trim(), password }),
       });
 
       const data = await res.json();
@@ -44,7 +50,7 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleLogin} className="space-y-5">
+    <form onSubmit={handleLogin} className="space-y-5" autoComplete="off">
       {error && (
         <div className="bg-rose-50 border border-rose-200 p-3 rounded-sm text-xs text-rose-600 flex items-center gap-2">
           <AlertCircle className="w-4 h-4 shrink-0" />
@@ -66,6 +72,7 @@ function LoginForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="admin@ak-associates.com"
+            autoComplete="email"
             className="w-full pl-10 pr-4 py-2.5 bg-surface-100 border border-slate-300 rounded-sm text-sm text-navy-900 focus:outline-none focus:border-brand-500 focus:bg-white transition-colors"
           />
         </div>
@@ -80,13 +87,23 @@ function LoginForm() {
             <Lock className="w-4 h-4" />
           </div>
           <input
-            type="password"
+            type={showPassword ? "text" : "password"}
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="••••••••"
-            className="w-full pl-10 pr-4 py-2.5 bg-surface-100 border border-slate-300 rounded-sm text-sm text-navy-900 focus:outline-none focus:border-brand-500 focus:bg-white transition-colors"
+            placeholder="Enter security password"
+            autoComplete="current-password"
+            className="w-full pl-10 pr-10 py-2.5 bg-surface-100 border border-slate-300 rounded-sm text-sm text-navy-900 focus:outline-none focus:border-brand-500 focus:bg-white transition-colors"
           />
+          <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 transition-colors"
+            tabIndex={-1}
+            aria-label={showPassword ? "Hide password" : "Show password"}
+          >
+            {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+          </button>
         </div>
       </div>
 

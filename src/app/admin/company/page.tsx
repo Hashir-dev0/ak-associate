@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
-import { CheckCircle, ShieldCheck, Building, Loader2, Save } from "lucide-react";
+import { CheckCircle, ShieldCheck, Building, Loader2, Save, Lock, AlertCircle } from "lucide-react";
 import { CompanyProfile } from "@/data/company";
 
 export default function AdminCompanyPage() {
@@ -10,6 +10,47 @@ export default function AdminCompanyPage() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+
+  // Password state
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [pwLoading, setPwLoading] = useState(false);
+  const [pwSuccess, setPwSuccess] = useState("");
+  const [pwError, setPwError] = useState("");
+
+  const handlePasswordChange = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setPwError("");
+    setPwSuccess("");
+
+    if (newPassword.length < 8) {
+      setPwError("New password must be at least 8 characters long");
+      return;
+    }
+
+    setPwLoading(true);
+    try {
+      const res = await fetch("/api/admin/auth/password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ currentPassword, newPassword }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setPwError(data.error || "Failed to update password");
+      } else {
+        setPwSuccess("Password successfully updated! Keep your new credentials safe.");
+        setCurrentPassword("");
+        setNewPassword("");
+        setTimeout(() => setPwSuccess(""), 5000);
+      }
+    } catch (err: any) {
+      setPwError(err.message || "Failed to update password");
+    } finally {
+      setPwLoading(false);
+    }
+  };
 
   useEffect(() => {
     fetchCompany();
@@ -234,6 +275,72 @@ export default function AdminCompanyPage() {
           </Button>
         </div>
       </form>
+
+      {/* Admin Security & Password Change */}
+      <div className="bg-white p-8 rounded-sm border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 className="font-display font-bold uppercase text-navy-900 text-base mb-1 flex items-center gap-2 border-b pb-2">
+            <Lock className="w-4 h-4 text-brand-500" />
+            Admin Security & Password
+          </h3>
+          <p className="text-slate-500 text-xs mt-1">
+            Update your master CMS password for secure administrator dashboard access.
+          </p>
+        </div>
+
+        {pwSuccess && (
+          <div className="bg-emerald-50 border border-emerald-200 p-3.5 rounded-sm text-xs text-emerald-700 flex items-center gap-2">
+            <CheckCircle className="w-4 h-4 shrink-0" />
+            <span className="font-semibold">{pwSuccess}</span>
+          </div>
+        )}
+
+        {pwError && (
+          <div className="bg-rose-50 border border-rose-200 p-3.5 rounded-sm text-xs text-rose-600 flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 shrink-0" />
+            <span>{pwError}</span>
+          </div>
+        )}
+
+        <form onSubmit={handlePasswordChange} className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-xs font-display font-bold uppercase tracking-wider text-slate-700 mb-1">
+                Current Password
+              </label>
+              <input
+                type="password"
+                required
+                value={currentPassword}
+                onChange={(e) => setCurrentPassword(e.target.value)}
+                placeholder="Enter current password"
+                className="w-full px-3.5 py-2 border border-slate-300 rounded-sm text-sm focus:outline-none focus:border-brand-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-display font-bold uppercase tracking-wider text-slate-700 mb-1">
+                New Password (Min 8 chars)
+              </label>
+              <input
+                type="password"
+                required
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="Enter new strong password"
+                className="w-full px-3.5 py-2 border border-slate-300 rounded-sm text-sm focus:outline-none focus:border-brand-500"
+              />
+            </div>
+          </div>
+
+          <div className="pt-2 flex justify-end">
+            <Button type="submit" disabled={pwLoading} variant="outline" size="md">
+              {pwLoading ? <Loader2 className="w-4 h-4 mr-1.5 animate-spin" /> : <Lock className="w-4 h-4 mr-1.5" />}
+              <span>{pwLoading ? "Updating Password..." : "Update Admin Password"}</span>
+            </Button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

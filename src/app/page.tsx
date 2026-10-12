@@ -12,6 +12,7 @@ import { ServicesGrid } from "@/components/home/ServicesGrid";
 import { ProjectsGallery } from "@/components/home/ProjectsGallery";
 import { CredentialsSection } from "@/components/home/CredentialsSection";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { FaqSection } from "@/components/home/FaqSection";
 import { EnquiryForm } from "@/components/home/EnquiryForm";
 
 // Force dynamic rendering so that any edit in CMS is immediately visible on the homepage
@@ -44,7 +45,10 @@ export default function HomePage() {
       {/* 6. Why Choose Us (Factual Reasons) */}
       <WhyChooseUs />
 
-      {/* 7. Contact / Project Inquiry */}
+      {/* 7. FAQ for AEO & Voice Search */}
+      <FaqSection />
+
+      {/* 8. Contact / Project Inquiry */}
       <EnquiryForm />
     </>
   );

@@ -21,6 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
         src={project.image}
         alt={project.title}
         fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className="object-cover object-center transition-transform duration-700 group-hover:scale-110 filter brightness-90 group-hover:brightness-75"
       />
 

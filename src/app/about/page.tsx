@@ -15,8 +15,11 @@ import { Button } from "@/components/ui/Button";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "About Us — Engineering Heritage & PEC C3 Certification",
+  title: "About Us — AK Associates Engineers & Contractors Karachi | PEC C3 Firm",
   description: "Learn about AK Associates Engineers & Contractors, established in 2013 in Karachi, Pakistan. PEC C3 licensed general contracting and civil engineering firm led by Rashid Ali.",
+  alternates: {
+    canonical: "https://akassociates.com.pk/about",
+  },
 };
 
 export default function AboutPage() {

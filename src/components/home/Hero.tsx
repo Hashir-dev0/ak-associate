@@ -37,9 +37,11 @@ export const Hero: React.FC<HeroProps> = ({ data, companyInfo }) => {
       <div className="absolute inset-0 z-0">
         <Image
           src={backgroundImage}
-          alt="AK Associates Construction & Engineering"
+          alt="AK Associates Construction & Engineering Karachi"
           fill
           priority
+          sizes="100vw"
+          quality={85}
           className="object-cover object-right-top sm:object-right md:object-center filter brightness-90 contrast-105"
         />
         {/* Layered dark gradients for maximum text readability */}

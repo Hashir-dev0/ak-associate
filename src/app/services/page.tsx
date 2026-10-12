@@ -18,8 +18,11 @@ import { Button } from "@/components/ui/Button";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Services & Capabilities — Civil Engineering & General Contracting",
-  description: "Comprehensive construction and engineering services by AK Associates: New Construction, Design-Build, Remodeling, Interior Design, Site Improvements, and Construction Consulting.",
+  title: "Civil Engineering & Construction Services — AK Associates Karachi",
+  description: "Comprehensive construction and engineering services by AK Associates Karachi: Turnkey Construction, PEB Steel Buildings, Design-Build, Commercial Plazas, Industrial Warehouses, and Renovation.",
+  alternates: {
+    canonical: "https://akassociates.com.pk/services",
+  },
 };
 
 const serviceImages: Record<string, string> = {

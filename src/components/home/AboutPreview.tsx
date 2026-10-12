@@ -38,6 +38,7 @@ export const AboutPreview: React.FC<AboutPreviewProps> = ({ about, company }) =>
                   src={primaryImg}
                   alt="AK Associates Architectural Execution"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw)"
                   className="object-cover"
                 />
               </div>
@@ -48,6 +49,7 @@ export const AboutPreview: React.FC<AboutPreviewProps> = ({ about, company }) =>
                   src={secondaryImg}
                   alt="Luxury Villa Finishing by AK Associates"
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw)"
                   className="object-cover"
                 />
               </div>

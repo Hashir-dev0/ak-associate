@@ -8,8 +8,11 @@ import { EnquiryForm } from "@/components/home/EnquiryForm";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Contact Us & Project Quotation — Karachi Office",
-  description: "Get in touch with Rashid Ali and the engineering team at AK Associates Engineers & Contractors. Office in Korangi, Karachi. Call 0321-3844024.",
+  title: "Contact AK Associates Karachi — Office & Project BOQ Quotation",
+  description: "Get in touch with Managing Director Rashid Ali at AK Associates Engineers & Contractors. Office in Korangi, Karachi. Call 0321-3844024 for project consultations.",
+  alternates: {
+    canonical: "https://akassociates.com.pk/contact",
+  },
 };
 
 export default function ContactPage() {

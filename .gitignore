@@ -33,6 +33,7 @@ yarn-error.log*
 data/*.tmp.*
 *.tmp.*
 *.log
+*.tsbuildinfo
 
 # OS Metadata
 .DS_Store
